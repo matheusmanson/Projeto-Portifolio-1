@@ -164,10 +164,6 @@ main {
 }
 
 
-a {
-    text-decoration: none;
-}
-
 input {
     width: 120px;
     height: 40px;
@@ -209,6 +205,9 @@ h2 {
     
 }
 
-
-
+#botaogradu:hover {
+    background-color: #3C3CE6;
+    border-radius: 20px;
+    cursor: pointer;
+}
 

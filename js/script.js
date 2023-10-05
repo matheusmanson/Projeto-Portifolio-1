@@ -1,4 +1,4 @@
-const botaogradu = document.getElementsByClassName('botaogradu')[0]; // Obtenha o primeiro elemento com a classe 'box12'
+const botaogradu = document.getElementById('botaogradu')[0]; // Obtenha o primeiro elemento com a classe 'botaogradu'
 
 botaogradu.addEventListener("mouseover", () => {
   botaogradu.style.backgroundColor = "black"; // Define a cor de fundo para preto quando o mouse passar por cima
