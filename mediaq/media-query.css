@@ -1,0 +1,15 @@
+/* Estilos para telas pequenas (até 768px de largura) */
+@media screen and (max-width: 768px) {
+    .box2 {
+        overflow-y: scroll;
+    }
+}
+
+/* Estilos para telas médias (de 769px a 1024px de largura) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .box2 {
+        overflow-y: scroll;
+    }   
+}
+
