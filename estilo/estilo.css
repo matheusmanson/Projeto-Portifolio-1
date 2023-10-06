@@ -198,16 +198,61 @@ input {
 
 h1 {
     font-family: var(--font-2);
+    margin: 10px;
 }
 
 h2 {
     font-family: var(--font-1);
+    margin: 5px;
     
 }
 
-#botaogradu:hover {
-    background-color: #3C3CE6;
-    border-radius: 20px;
-    cursor: pointer;
+p {
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
 }
 
+
+#conteudogradu {
+    width: 100%;
+    max-height: 400px; /* Defina a altura máxima desejada */
+    overflow-y: auto; /* Adicione rolagem vertical quando necessário */
+    scrollbar-width: thin; /* Define a largura da barra de rolagem (pode ser "thin" ou "auto") */
+    scrollbar-color: #3C3CE6 #000066; /* Define a cor da barra de rolagem (pode personalizar essas cores) */
+}
+
+#conteudogradu::-webkit-scrollbar {
+    width: 8px; /* Define a largura da barra de rolagem no Chrome e Safari */
+}
+
+#conteudogradu::-webkit-scrollbar-thumb {
+    background-color: #3C3CE6; /* Define a cor do polegar da barra de rolagem no Chrome e Safari */
+}
+
+#conteudogradu::-webkit-scrollbar-track {
+    background-color: #000066; /* Define a cor da trilha da barra de rolagem no Chrome e Safari */
+}
+
+
+#botaogradu:hover {
+    background-color: #3c3ce66b;
+    width: 200px;
+    border-radius: 20px; 
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.452);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#botaogradu:active {
+    background-color: #3c3ce66b;
+    width: 200px;
+    border-radius: 20px; 
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.452);
+    cursor: pointer;
+    transition: 0.01s;
+}
+
+
+
+  

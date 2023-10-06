@@ -1,6 +1,6 @@
 /* Estilos para telas pequenas (até 768px de largura) */
 @media screen and (max-width: 768px) {
-    .box2 {
+    .box2 { 
         overflow-y: scroll;
     }
 }

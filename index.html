@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilo/estilo.css">
     <link rel="stylesheet" href="mediaq/media-query.css">
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
         <header>
@@ -25,7 +25,7 @@
                             <div id="botaogradu">
                                 <div class="box12">
                                     <div class="box6"><img src="imagem/gradu50x50.png" alt="graduação" class="img2"></div>
-                                    <div class="box7">Graduação</div>
+                                    <div class="box7">Graduação/Cursos</div>
                                 </div>
                             </div>
                     </div>
@@ -62,14 +62,84 @@
             </div>
             <div class="box2">
                 <div id="container7">
-                    <div class="box9"><h1> &#9996 OLÁ TUDO BEM? &#9996 </h1></div>
-                    <div><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis repellat quibusdam corporis rem doloremque quidem totam aliquid quae aspernatur, enim dolorem voluptas excepturi ex, possimus in dolor delectus accusamus.</h2></div>
-                    <div class="box10"> <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et perspiciatis corrupti dolor atque sunt explicabo architecto quam reiciendis asperiores est nostrum, nisi alias vitae, eveniet facere fugit deserunt quae. Enim.</h2></div>
-                    <div class="box10"><h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, recusandae? Porro assumenda cupiditate, ullam itaque minus cumque, sed eius enim tenetur quasi veniam tempora accusamus blanditiis autem ipsa pariatur quis.</h2></div>
+                    <div id="conteudoprincipal" style="display: block;">
+                        <div class="box9"><h1> &#9996 OLÁ TUDO BEM? &#9996 </h1></div>
+                        <div><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis repellat quibusdam corporis rem doloremque quidem totam aliquid quae aspernatur, enim dolorem voluptas excepturi ex, possimus in dolor delectus accusamus.</h2></div>
+                        <div class="box10"> <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et perspiciatis corrupti dolor atque sunt explicabo architecto quam reiciendis asperiores est nostrum, nisi alias vitae, eveniet facere fugit deserunt quae. Enim.</h2></div>
+                        <div class="box10"><h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, recusandae? Porro assumenda cupiditate, ullam itaque minus cumque, sed eius enim tenetur quasi veniam tempora accusamus blanditiis autem ipsa pariatur quis.</h2></div>
+                        <div class="box11"><input type="button" value="Meu Curriculo"></div>
+                    </div>
+                </div>
 
-                    <div class="box11"><input type="button" value="Meu Curriculo"></div>
+                <div id="conteudogradu" style="display: none;">
+                    <div><h1>FORMAÇÃO ACADÊMICA</h1></div>
+                    <hr width="70%"></hr>
+                    <div><h2>Tecnólogo em Análise e Desenv. de Sistemas</h2></div>
+                    <div><p>Estácio 1° ano - Cursando</p></div>
+                    <div><h2>Bacharel em Ciência da Computação</h2></div>
+                    <div><p>FIB - Faculdades Integradas de Bauru 3° ano -Incompleto</p></div>
+                    
+                    <div><h1>QUALIFICAÇÕES</h1></div>
+                    <hr width="70%"></hr>
+                    <h2>Javascript</h2>
+                    <p>Curso em Vídeo Set. de 2023</p>
+                    <h2>MS PowerBI</h2>
+                    <p>Fundação Bradesco Mai. de 2023</p>
+                    <h2>HTML5 E CSS3</h2>
+                    <p>Curso em Vídeo Nov. de 2022</p>
+                    <h2>Autodesk Inventor</h2>
+                    <p>SENAI Bauru Nov. de 2020 – Jan. de 202</p>
+                    <h2>Autodesk AutoCAD </h2>
+                    <p>ABED Set. de 2020</p>
+
+
+
                 </div>
             </div>
         </main>
+        <script>   
+              
+              function clicaremostrar () {
+            const Botaogradu = document.getElementById('botaogradu');
+            const Conteudoprincipal = document.getElementById('conteudoprincipal');
+            const Conteudogradu = document.getElementById('conteudogradu');
+
+            if (Conteudogradu.style.display == 'none') {
+                Conteudogradu.style.display = 'block';
+                Conteudoprincipal.style.display = 'none';
+                
+            } else {
+                Conteudogradu.style.display ='none';
+                Conteudoprincipal.style.display = 'block'
+                Botaogradu.classList.remove('botaogradu');
+            }
+        }
+
+        // click após o carregamento da página
+        window.addEventListener('DOMContentLoaded', function() {
+            const Botaogradu = document.getElementById('botaogradu');
+            const Conteudoprincipal = document.getElementById('conteudoprincipal');
+
+            
+            Botaogradu.addEventListener('click', clicaremostrar);
+            
+            
+
+        });
+
+             
+        </script>
 </body>
 </html>
+
+
+
+<!-- const  Botaogradu = document.getElementById('botaogradu')
+const Conteudoprincipal = document.getElementById('conteudoprincipal')
+const Conteudogradu = document.getElementById('conteudogradu')
+
+Botaogradu.addEventListener('click', () => {
+Conteudoprincipal.style.display = 'none';
+Conteudogradu.style.display = '';
+});'
+ -->
