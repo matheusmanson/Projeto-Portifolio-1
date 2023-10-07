@@ -1,15 +1,47 @@
 /* Estilos para telas pequenas (até 768px de largura) */
 @media screen and (max-width: 768px) {
-    .box2 { 
-        overflow-y: scroll;
+
+
+    main {
+        max-width: 50vw;
     }
+
+    .box1 {
+        width: 70vw;
+        height: 600px;
+        border-radius: 20px;
+        background-color: #8383EA;
+        
+    }
+
+    .box2 {
+        display: none;
+    }
+
 }
 
 /* Estilos para telas médias (de 769px a 1024px de largura) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
     .box2 {
-        overflow-y: scroll;
-    }   
+        width: 100%;
+        margin: 10px;
+        max-height: 500px; /* Defina a altura máxima desejada */
+        overflow-y: auto; /* Adicione rolagem vertical quando necessário */
+        scrollbar-width: thin; /* Define a largura da barra de rolagem (pode ser "thin" ou "auto") */
+        scrollbar-color: #3C3CE6 #000066; /* Define a cor da barra de rolagem (pode personalizar essas cores) */
+    }
+    
+    .box2::-webkit-scrollbar {
+        width: 8px; /* Define a largura da barra de rolagem no Chrome e Safari */
+    }
+    
+.box2::-webkit-scrollbar-thumb {
+        background-color: #3C3CE6; /* Define a cor do polegar da barra de rolagem no Chrome e Safari */
+    }
+    
+    .box2::-webkit-scrollbar-track {
+        background-color: #000066; /* Define a cor da trilha da barra de rolagem no Chrome e Safari */
+    }
 }
 
