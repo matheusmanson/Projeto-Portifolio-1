@@ -6,6 +6,7 @@
         max-width: 66vw;
     }
 
+
     .box1 {
         width: 70vw;
         height: 600px;
@@ -18,6 +19,7 @@
         display: none;
     }
 
+     
 }
 
 /* Estilos para telas médias (de 769px a 1024px de largura) */
@@ -45,3 +47,9 @@
     }
 }
 
+.box7 {
+    font-size: 1.2em;
+}
+.box5, .box4 {
+    text-align: center;
+}
