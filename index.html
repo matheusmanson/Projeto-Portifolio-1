@@ -31,9 +31,11 @@
                             </div>
                         </div>
                         <div id="container3">
+                            <div id="botaoskills">
                             <div class="box12">
                                 <div class="box6"><img src="imagem/skils50x50.png" alt="skills" class="img2"></div>
                                     <div class="box7">Skills</div>
+                                </div>
                             </div>
                         </div>
                         <div id="container4">
@@ -94,33 +96,78 @@
 
 
                 </div>
+
+                <div id="conteudoskills" style="display: none;">
+                    <div>OLA</div>
+                </div>
             </div>
         </main>
         <script>   
               
-              function clicaremostrar () {
+              function clicaremostrargradu () {
             const Botaogradu = document.getElementById('botaogradu');
             const Conteudoprincipal = document.getElementById('conteudoprincipal');
             const Conteudogradu = document.getElementById('conteudogradu');
+            
 
             if (Conteudogradu.style.display == 'none') {
                 Conteudogradu.style.display = 'block';
                 Conteudoprincipal.style.display = 'none';
+                Conteudoskills.style.display = 'none'
                 
-            } else {
-                Conteudogradu.style.display ='none';
+            } else if (Conteudogradu.style.display ='none') {
                 Conteudoprincipal.style.display = 'block'
+                Conteudoskills.style.display = 'none'
                 Botaogradu.classList.remove('botaogradu');
+                Botaoskills.classList.remove('botaoskills')
+                
             }
         }
 
-        
+
+
+
+
         window.addEventListener('DOMContentLoaded', function() {
             const Botaogradu = document.getElementById('botaogradu');
             const Conteudoprincipal = document.getElementById('conteudoprincipal');
 
             
-            Botaogradu.addEventListener('click', clicaremostrar);
+            Botaogradu.addEventListener('click', clicaremostrargradu);
+            
+            
+
+        });
+
+
+
+        
+        function clicaremostrarskills () {
+            const Botaoskills = document.getElementById('botaoskills');
+            const Conteudoskills = document.getElementById('conteudoskills')
+            const Conteudoprincipal = document.getElementById('conteudoprincipal');
+
+
+            if (Conteudoskills.style.display = 'none') {
+                Conteudoskills.style.display = 'block';
+                Conteudoprincipal.style.display = 'none'
+
+            } else if (Conteudoskills.style.display ='block') {
+                Conteudoprincipal.style.display = 'none'
+                Conteudoskills.style.display = 'block'
+                Botaoskills.classList.remove('botaoskills')
+            }
+        }
+
+
+
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const Botaoskills = document.getElementById('botaoskills')
+            const Conteudoskills = document.getElementById('conteudoskills');
+
+            
+            Botaoskills.addEventListener('click', clicaremostrarskills)
             
             
 

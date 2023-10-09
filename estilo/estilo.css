@@ -261,6 +261,18 @@ p {
     transition: 0.01s;
 }
 
+#botaoskills:hover {
+    background-color: #3c3ce66b;
+    width: 200px;
+    border-radius: 20px; 
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.452);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+  /* DEPOIS ARRUMAR  */
+
+
 
 
   /* DEPOIS ARRUMAR  */
