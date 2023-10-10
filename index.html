@@ -22,13 +22,35 @@
                         <div class="box4">Matheus Manson</div>
                         <div class="box5">Desenvolvedor Web em Formação</div>
                     </div>
+                        
+
+                    <section class="top-nav">
+                    <div>
+                        MENU
+                    </div>
+
+                    <input id="menu-toggle" type="checkbox">
+                        <label class="menu-button-container" for="menu-toggle">
+                            <div class="menu-button">
+
+                            </div>
+                        </label>
+                        <ul class="menu">
+                            <li>Graduação</li>
+                            <li>Skills</li>
+                            <li>Expência</li>
+                            <li>Projetos</li>
+                        </ul>
+                    </section>
+
                         <div id="container2">
                             <div id="botaogradu">
                                 <div class="box12">
                                 <div class="box6"><img src="imagem/gradu50x50.png" alt="graduação" class="img2"></div>
-                                    <div class="box7">Graduação</div>
+                                <div class="box7">Graduação</div>
                                 </div>
                             </div>
+                       
                         </div>
                         <div id="container3">
                             <div id="botaoskills">
@@ -50,7 +72,7 @@
                                 <div class="box7">Projetos</div>
                             </div>
                         </div>
-                
+                            
                 
                     <div id="container6">
                         <div><span>&#169Matheus Manson</span></div>
@@ -71,6 +93,7 @@
                         <div class="box11"><input type="button" value="Meu Curriculo"></div>
                     </div>
                 </div>
+                
 
                 <div id="conteudogradu" style="display: none;">
                     <div><h1>FORMAÇÃO ACADÊMICA</h1></div>
@@ -92,89 +115,16 @@
                     <p>SENAI Bauru Nov. de 2020 – Jan. de 202</p>
                     <h2>Autodesk AutoCAD </h2>
                     <p>ABED Set. de 2020</p>
-
-
-
                 </div>
 
                 <div id="conteudoskills" style="display: none;">
                     <div>OLA</div>
                 </div>
+
+                <div id="conteudoexp" style="display: none;"></div>
+                
             </div>
         </main>
-        <script>   
-              
-              function clicaremostrargradu () {
-            const Botaogradu = document.getElementById('botaogradu');
-            const Conteudoprincipal = document.getElementById('conteudoprincipal');
-            const Conteudogradu = document.getElementById('conteudogradu');
-            
-
-            if (Conteudogradu.style.display == 'none') {
-                Conteudogradu.style.display = 'block';
-                Conteudoprincipal.style.display = 'none';
-                Conteudoskills.style.display = 'none'
-                
-            } else if (Conteudogradu.style.display ='none') {
-                Conteudoprincipal.style.display = 'block'
-                Conteudoskills.style.display = 'none'
-                Botaogradu.classList.remove('botaogradu');
-                Botaoskills.classList.remove('botaoskills')
-                
-            }
-        }
-
-
-
-
-
-        window.addEventListener('DOMContentLoaded', function() {
-            const Botaogradu = document.getElementById('botaogradu');
-            const Conteudoprincipal = document.getElementById('conteudoprincipal');
-
-            
-            Botaogradu.addEventListener('click', clicaremostrargradu);
-            
-            
-
-        });
-
-
-
-        
-        function clicaremostrarskills () {
-            const Botaoskills = document.getElementById('botaoskills');
-            const Conteudoskills = document.getElementById('conteudoskills')
-            const Conteudoprincipal = document.getElementById('conteudoprincipal');
-
-
-            if (Conteudoskills.style.display = 'none') {
-                Conteudoskills.style.display = 'block';
-                Conteudoprincipal.style.display = 'none'
-
-            } else if (Conteudoskills.style.display ='block') {
-                Conteudoprincipal.style.display = 'none'
-                Conteudoskills.style.display = 'block'
-                Botaoskills.classList.remove('botaoskills')
-            }
-        }
-
-
-
-
-        window.addEventListener('DOMContentLoaded', function() {
-            const Botaoskills = document.getElementById('botaoskills')
-            const Conteudoskills = document.getElementById('conteudoskills');
-
-            
-            Botaoskills.addEventListener('click', clicaremostrarskills)
-            
-            
-
-        });
-
-             
-        </script>
 </body>
 </html>
 
